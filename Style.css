@@ -1,5 +1,5 @@
 header {
-    background-color: #0b4e05;
+    background-color: #deb887;
     padding: 20px;
     text-align: center;
     
@@ -9,10 +9,6 @@ header {
 
 }
 
-header:hover {
-    color: #000000;
-    text-decoration: none;
-}
 
 ul.nav {
     list-style-type: none;
@@ -59,8 +55,8 @@ ul.nav li {
 }
 
 @keyframes headerAnimation {
-    from { background-color: #0b4e05; }
-    to { background-color: #8d0505; }
+    from { background-color: #deb887; }
+    to { background-color: #9d683f; }
 
 }
 
@@ -68,13 +64,15 @@ ul.nav li {
 div {
     width: 100px;
     height: 100px;
-    background-color: burlywood;
-    transition: width 2s, Height 2s;
+    background-color: #deb887;
     border-radius: 10px;
     margin: 10px;
+    padding: 20px;
+    transition: width 2s, background-color 3s; /*Sørger for smooth transition når hover har FORLADT div*/
 }
 
 div:hover {
-    width: 400px;
-    background-color: lightcoral;
+    width: 500px;
+    background-color: #9d683f;
+    transition: background-color 3s, width 2s;
 }
