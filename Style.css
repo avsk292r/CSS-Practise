@@ -64,7 +64,17 @@ ul.nav li {
 
 }
 
-@keyframes headerAnimation2 {
-    from { background-color: #8d0505; }
-    to { background-color: #0b4e05; }
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: burlywood;
+    transition: width 2s, Height 2s;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+div:hover {
+    width: 400px;
+    background-color: lightcoral;
 }
