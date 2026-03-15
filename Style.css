@@ -1,0 +1,70 @@
+header {
+    background-color: #0b4e05;
+    padding: 20px;
+    text-align: center;
+    
+    animation-name: headerAnimation;
+    animation-duration: 4s;
+    animation-iteration-count:infinite;
+
+}
+
+header:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.nav li {
+    float: left;
+}
+
+
+ ul.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ ul.nav li a:hover {
+    background-color: #111;
+}
+
+ div.flex-container {
+    display: flex;
+    flex-direction: row;
+    background-color: DodgerBlue;
+}
+
+ div.flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+@media screen and (max-width:600px) {
+    div.flex-container {
+        flex-direction: column;
+    }
+}
+
+@keyframes headerAnimation {
+    from { background-color: #0b4e05; }
+    to { background-color: #8d0505; }
+
+}
+
+@keyframes headerAnimation2 {
+    from { background-color: #8d0505; }
+    to { background-color: #0b4e05; }
+}
