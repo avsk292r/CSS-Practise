@@ -5,6 +5,7 @@ header {
     
     animation-name: headerAnimation;
     animation-duration: 4s;
+    animation-direction: alternate; /*Sørger for at animationen spiller frem og tilbage, og giver en blød overgang*/
     animation-iteration-count:infinite;
 
 }
@@ -61,7 +62,7 @@ ul.nav li {
 }
 
 
-div {
+ #expandableDiv {
     width: 100px;
     height: 100px;
     background-color: #deb887;
@@ -69,10 +70,12 @@ div {
     margin: 10px;
     padding: 20px;
     transition: width 2s, background-color 3s; /*Sørger for smooth transition når hover har FORLADT div*/
+
 }
 
-div:hover {
+ #expandableDiv:hover {
     width: 500px;
     background-color: #9d683f;
     transition: background-color 3s, width 2s;
 }
+
